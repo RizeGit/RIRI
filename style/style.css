@@ -25,9 +25,26 @@ body{
     height:40px;
     background:#f8f8f0;
 }
+/* 메뉴 링크(들어가기, 회원가입 등)에 공통 적용 */
+/* .top-menu 또는 .footer-menu 내의 a 태그를 타겟팅합니다 */
+.top-menu a, .footer-menu a {
+    text-decoration: none;
+    color: #333;
+    padding-bottom: 2px; /* 밑줄과 글자 사이 간격 */
+    border-bottom: 2px solid transparent; /* 기본 상태는 투명한 밑줄 */
+    transition: all 0.2s ease;
+}
+
+/* 마우스를 올렸을 때 */
+.top-menu a:hover, .footer-menu a:hover {
+    border-bottom: 2px solid #fff; /* 흰색 밑줄 */
+    color: #000; /* 필요시 글자색 변경 */
+}
+
 
 .top-right{
     font-size:15px;
+    border-bottom: 2px solid #ffffff; /* 흰색 밑줄 */
     color:#666;
 }
 
@@ -52,6 +69,21 @@ body{
     justify-content: space-between; 
     height: 42px;
     font-size: 15px;
+}
+.top-right  {
+    text-decoration: none;
+    color: #666;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent; /* 기본은 투명 */
+    transition: all 0.2s ease;
+    display: inline-block; /* 밑줄이 글자 너비에 맞게 표시되도록 함 */
+}
+
+/* 3. 마우스 올렸을 때 및 포커스 시 갈색 밑줄 */
+.top-right :hover, 
+.top-right :focus {
+    border-bottom: 2px solid #77655a; /* 갈색 밑줄 (검색창에 사용된 색상과 통일) */
+    outline: none;
 }
 
 .top-left{
