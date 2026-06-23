@@ -3,11 +3,18 @@
     padding:0;
     box-sizing:border-box;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body{
     background:#f8f8f0;
     font-family:'Malgun Gothic',sans-serif;
+    display: flex;
+    flex-direction: column;
     font-size:17px;
 }
+
 .top-menu{
     width:1200px;
     margin:0 auto;
@@ -55,23 +62,17 @@ body{
     color:#444;
     
 }
-
 .flag{
     width:30px;
     margin-right:10px;
 }
-
-
 a{
     text-decoration:none;
     color:#333;
 }
-
 ul{
     list-style:none;
 }
-
-
 
 main{
     display:flex;
@@ -79,7 +80,6 @@ main{
     align-items:center;
     margin-top:120px;
 }
-
 .logo img{
     width:700px;
 }
@@ -91,12 +91,10 @@ main{
     opacity: 0.8;
     transition: opacity 0.3s;
 }
-
 .search-area{
     display:flex;
     margin-top:40px;
 }
-
 
 .search-box{
     width:650px;
@@ -131,11 +129,9 @@ main{
 .search-btn {
     transition: transform 0.1s; /* 누를 때 바로 반응하도록 빠르게 */
 }
-
 .search-btn:active {
     transform: scale(0.95);    /* 클릭하는 순간 살짝 작아짐 */
 }
-
 .detail-btn{
     width:130px;
     height:58px;
@@ -173,8 +169,6 @@ main{
     transition: all 0.2s ease; /* 모든 변화를 부드럽게 */
 }
 
-    
-
 
 /* 알립니다 */
 .notice-title h2{
@@ -192,8 +186,7 @@ main{
     justify-content:space-between;
     align-items:center;
     border-bottom:1px solid #aaa;
-    padding-bottom:10px;
-    
+    padding-bottom:10px;  
 }
 
 .notice-title button{
@@ -206,9 +199,14 @@ main{
 }
 .detail-btn:hover,
 .notice-title button:hover{
-    border-color:#8d7767;
-    
+    border-color:#8d7767;   
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .notice ul{
     margin-top:10px;
